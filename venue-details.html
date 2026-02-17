@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Details - Tahwar.pk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/venue-details.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="pattern-overlay"></div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tahwar.pk</a>
+            <ul class="nav-links">
+                <li><a href="venues.html">Venues</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="vendor-registration.html" class="vendor-btn">List Your Venue</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="TahwarApp.toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="venue-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="venues.html">Venues</a> / Pearl Continental Marquee
+            </div>
+            <h1>Pearl Continental Marquee</h1>
+            <div class="venue-meta">
+                <span>⭐ 4.8 (127 reviews)</span>
+                <span>📍 Karachi, Sindh</span>
+                <span>✅ Verified Venue</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="venue-details-section">
+        <div class="container">
+            <div class="venue-layout">
+                <div class="venue-main">
+                    <div class="venue-gallery">
+                        <div class="main-image">📸 Main Venue Image</div>
+                        <div class="thumbnail-grid">
+                            <div class="thumbnail">📸 1</div>
+                            <div class="thumbnail">📸 2</div>
+                            <div class="thumbnail">📸 3</div>
+                            <div class="thumbnail">📸 4</div>
+                        </div>
+                    </div>
+                    
+                    <div class="venue-description card">
+                        <h2>About This Venue</h2>
+                        <p>Pearl Continental Marquee is one of Karachi's most prestigious wedding venues, offering a blend of luxury and traditional Pakistani hospitality. Our spacious indoor and outdoor facilities can accommodate up to 800 guests comfortably.</p>
+                        <p>With state-of-the-art facilities, professional service staff, and customizable packages, we ensure your special day is perfect in every way.</p>
+                        
+                        <h3 class="mt-3">Amenities</h3>
+                        <div class="amenities-grid">
+                            <div class="amenity">✓ Parking for 200 vehicles</div>
+                            <div class="amenity">✓ Central Air Conditioning</div>
+                            <div class="amenity">✓ In-house Catering</div>
+                            <div class="amenity">✓ Stage & Decoration</div>
+                            <div class="amenity">✓ Sound System</div>
+                            <div class="amenity">✓ Bridal Room</div>
+                            <div class="amenity">✓ Generator Backup</div>
+                            <div class="amenity">✓ Security Services</div>
+                        </div>
+                        
+                        <h3 class="mt-3">Venue Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec">
+                                <strong>Capacity:</strong> 800 guests
+                            </div>
+                            <div class="spec">
+                                <strong>Type:</strong> Indoor/Outdoor
+                            </div>
+                            <div class="spec">
+                                <strong>Hall Size:</strong> 15,000 sq ft
+                            </div>
+                            <div class="spec">
+                                <strong>Parking:</strong> 200 cars
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="venue-reviews card">
+                        <h2>Guest Reviews</h2>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <strong>Sarah Ahmed</strong>
+                                    <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <span class="review-date">January 2024</span>
+                            </div>
+                            <p>Absolutely stunning venue! The staff was professional and accommodating. Our wedding was perfect thanks to the Pearl Continental team.</p>
+                        </div>
+                        
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <strong>Ali Hassan</strong>
+                                    <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <span class="review-date">December 2023</span>
+                            </div>
+                            <p>Great value for money. The food was excellent and the ambiance was exactly what we wanted for our daughter's barat.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="venue-sidebar">
+                    <div class="booking-card card">
+                        <div class="price-display">
+                            <span class="price">₨ 450,000</span>
+                            <span class="price-label">Starting price</span>
+                        </div>
+                        
+                        <form id="booking-form" class="booking-form">
+                            <h3>Request Booking</h3>
+                            
+                            <div class="form-group">
+                                <label>Your Name *</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Phone Number *</label>
+                                <input type="tel" name="phone" placeholder="03001234567" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Event Date *</label>
+                                <input type="date" name="event_date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Expected Guests *</label>
+                                <input type="number" name="guests" min="50" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Additional Message</label>
+                                <textarea name="message" rows="3"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Booking Request</button>
+                            <p class="form-note">The venue owner will contact you within 24 hours</p>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-card card">
+                        <h3>Contact Venue</h3>
+                        <div class="contact-info">
+                            <p><strong>Phone:</strong> +92 300 1234567</p>
+                            <p><strong>Email:</strong> info@pcmarquee.pk</p>
+                            <p><strong>Address:</strong> Club Road, Karachi</p>
+                        </div>
+                        <a href="tel:+923001234567" class="btn btn-secondary">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Tahwar.pk</h3>
+                    <p>Pakistan's most trusted wedding marketplace.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>For Vendors</h4>
+                    <ul>
+                        <li><a href="vendor-registration.html">Register Your Venue</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="venues.html">Wedding Venues</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Tahwar.pk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

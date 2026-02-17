@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahwar.pk - Pakistan's Most Trusted Wedding Marketplace</title>
+    <meta name="description" content="Discover verified wedding halls, vendors, and services across Pakistan. Transparent pricing, instant availability, and trusted bookings for your perfect wedding day.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="pattern-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tahwar.pk</a>
+            <ul class="nav-links">
+                <li><a href="venues.html">Venues</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="vendor-registration.html" class="vendor-btn">List Your Venue</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="TahwarApp.toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-nav" class="mobile-nav">
+        <ul>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="vendor-registration.html">List Your Venue</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🎊 Pakistan's Most Trusted Wedding Marketplace</div>
+            <h1>
+                Jahan <span class="highlight">Khwab</span> Milte Hain<br>
+                <span class="highlight">Rasmon</span> Se
+            </h1>
+            <p class="hero-subtitle">
+                Where Dreams Meet Tradition. Find verified wedding venues, transparent pricing, and trusted vendors across Pakistan—all in one place.
+            </p>
+            <div class="hero-cta">
+                <a href="venues.html" class="btn btn-white">
+                    Explore Venues
+                    <span>→</span>
+                </a>
+                <a href="vendor-registration.html" class="btn btn-secondary">
+                    List Your Hall
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Verified Venues</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15K+</span>
+                    <span class="stat-label">Happy Couples</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Major Cities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="section-label">Simple & Transparent</div>
+                <h2 class="section-title">How Tahwar.pk Works</h2>
+                <p class="section-description">
+                    Whether you're planning your wedding or a venue owner looking to grow your business
+                </p>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="TahwarApp.switchTab('customers')">For Couples</button>
+                <button class="tab-btn" onclick="TahwarApp.switchTab('vendors')">For Venue Owners</button>
+            </div>
+            
+            <div id="customers-tab" class="tab-content active">
+                <div class="steps">
+                    <div class="step scroll-reveal">
+                        <div class="step-number">1</div>
+                        <h3>Search & Compare</h3>
+                        <p>Browse verified wedding halls across Pakistan. Filter by city, capacity, budget, and availability. See real pricing—no hidden costs.</p>
+                    </div>
+                    <div class="step scroll-reveal">
+                        <div class="step-number">2</div>
+                        <h3>Check Availability</h3>
+                        <p>View live availability calendars. Check multiple venues for your preferred dates. Get instant confirmations.</p>
+                    </div>
+                    <div class="step scroll-reveal">
+                        <div class="step-number">3</div>
+                        <h3>Request Booking</h3>
+                        <p>Connect directly with venue owners. Request detailed packages. Schedule site visits. Book with confidence.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="vendors-tab" class="tab-content">
+                <div class="steps">
+                    <div class="step scroll-reveal">
+                        <div class="step-number">1</div>
+                        <h3>Create Your Listing</h3>
+                        <p>Sign up in minutes. Upload photos. Set your pricing, availability, and capacity. Showcase what makes your hall special.</p>
+                    </div>
+                    <div class="step scroll-reveal">
+                        <div class="step-number">2</div>
+                        <h3>Get Discovered</h3>
+                        <p>Reach thousands of couples actively searching. Benefit from our marketing. Get featured placements to boost visibility.</p>
+                    </div>
+                    <div class="step scroll-reveal">
+                        <div class="step-number">3</div>
+                        <h3>Receive Bookings</h3>
+                        <p>Get verified booking requests directly. Manage your calendar seamlessly. Pay commission only on confirmed bookings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Venues Section -->
+    <section id="venues" class="featured-venues">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="section-label">Premium Selection</div>
+                <h2 class="section-title">Featured Wedding Venues</h2>
+                <p class="section-description">
+                    Handpicked, verified venues trusted by families across Pakistan
+                </p>
+            </div>
+            
+            <div class="venue-grid">
+                <div class="venue-card scroll-reveal" data-city="karachi" data-capacity="800" data-price="450000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Available</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Pearl Continental Marquee</h3>
+                            <div class="venue-rating">★ 4.8</div>
+                        </div>
+                        <div class="venue-location">📍 Karachi, Sindh</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">800 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Indoor/Outdoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 450,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=1" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="venue-card scroll-reveal" data-city="lahore" data-capacity="1200" data-price="650000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Featured</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Royal Palm Golf Club</h3>
+                            <div class="venue-rating">★ 4.9</div>
+                        </div>
+                        <div class="venue-location">📍 Lahore, Punjab</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">1200 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Outdoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 650,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=2" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="venue-card scroll-reveal" data-city="islamabad" data-capacity="600" data-price="350000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Available</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Emerald Grand Banquet</h3>
+                            <div class="venue-rating">★ 4.7</div>
+                        </div>
+                        <div class="venue-location">📍 Islamabad, ICT</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">600 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Indoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 350,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=3" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="venues.html" class="btn btn-primary">View All 500+ Venues</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="section-label">Complete Wedding Solutions</div>
+                <h2 class="section-title">Beyond Just Venues</h2>
+                <p class="section-description">
+                    Everything you need for your perfect wedding day
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <a href="services.html#catering" class="service-card scroll-reveal">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Premium Catering</h3>
+                    <p>Authentic desi cuisine and continental menus from verified caterers.</p>
+                    <span class="service-link">
+                        Explore Caterers →
+                    </span>
+                </a>
+                
+                <a href="services.html#photography" class="service-card scroll-reveal">
+                    <div class="service-icon">📸</div>
+                    <h3>Photography</h3>
+                    <p>Capture every precious moment with professional photographers.</p>
+                    <span class="service-link">
+                        Find Photographers →
+                    </span>
+                </a>
+                
+                <a href="services.html#decoration" class="service-card scroll-reveal">
+                    <div class="service-icon">🎨</div>
+                    <h3>Event Decoration</h3>
+                    <p>Traditional floral arrangements to modern themes.</p>
+                    <span class="service-link">
+                        Browse Decorators →
+                    </span>
+                </a>
+                
+                <a href="services.html#makeup" class="service-card scroll-reveal">
+                    <div class="service-icon">💄</div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Expert makeup artists specializing in bridal looks.</p>
+                    <span class="service-link">
+                        View Makeup Artists →
+                    </span>
+                </a>
+                
+                <a href="services.html#planning" class="service-card scroll-reveal">
+                    <div class="service-icon">🎭</div>
+                    <h3>Event Management</h3>
+                    <p>Professional planners who handle every detail.</p>
+                    <span class="service-link">
+                        Hire Event Planners →
+                    </span>
+                </a>
+                
+                <a href="services.html#entertainment" class="service-card scroll-reveal">
+                    <div class="service-icon">🎵</div>
+                    <h3>Entertainment</h3>
+                    <p>DJs, live bands, and traditional dhol players.</p>
+                    <span class="service-link">
+                        Book Entertainment →
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="section-label">Real Stories</div>
+                <h2 class="section-title">What Families Are Saying</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial scroll-reveal">
+                    <p class="testimonial-content">
+                        Tahwar.pk made it so easy to compare venues and check availability. The pricing transparency saved us from so many headaches. Highly recommend!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">FA</div>
+                        <div class="author-info">
+                            <h4>Faisal Ahmed</h4>
+                            <p>Father of the Bride • Islamabad</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial scroll-reveal">
+                    <p class="testimonial-content">
+                        Found our perfect venue in just two days. The booking process was seamless! Best decision for our wedding planning.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-info">
+                            <h4>Ayesha Khan</h4>
+                            <p>Bride • Karachi</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial scroll-reveal">
+                    <p class="testimonial-content">
+                        I've received 23 confirmed bookings in 6 months. The commission model is fair and the support team is excellent.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MI</div>
+                        <div class="author-info">
+                            <h4>Muhammad Imran</h4>
+                            <p>Venue Owner • Faisalabad</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="section-label">Got Questions?</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="TahwarApp.toggleFAQ(this)">
+                        <h3>How does Tahwar.pk make money?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Tahwar.pk charges wedding venues a small commission (5-10%) only when a booking is successfully confirmed. For customers, our service is completely free.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="TahwarApp.toggleFAQ(this)">
+                        <h3>Is booking through Tahwar.pk more expensive?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            No. The prices you see are the same as booking directly. You get complete price transparency and verified reviews at no extra cost.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="TahwarApp.toggleFAQ(this)">
+                        <h3>Which cities does Tahwar.pk cover?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We currently operate in Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, and Quetta with 500+ verified venues.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Tahwar.pk</h3>
+                    <p>Pakistan's most trusted wedding marketplace, connecting families with verified venues and vendors since 2023.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">▶</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>For Vendors</h4>
+                    <ul>
+                        <li><a href="vendor-registration.html">Register Your Venue</a></li>
+                        <li><a href="vendor-login.html">Vendor Login</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="venues.html">Wedding Venues</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Tahwar.pk. All rights reserved. Made with ❤️ for Pakistani families.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

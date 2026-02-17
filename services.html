@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Services - Tahwar.pk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="pattern-overlay"></div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tahwar.pk</a>
+            <ul class="nav-links">
+                <li><a href="venues.html">Venues</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="vendor-registration.html" class="vendor-btn">List Your Venue</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="TahwarApp.toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Wedding Services</h1>
+            <p>Complete wedding solutions beyond venues</p>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card" id="catering">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Premium Catering</h3>
+                    <p>Authentic Pakistani cuisine, continental menus, and live cooking stations. Our verified caterers specialize in traditional desi dishes perfect for mehndi, barat, and valima celebrations.</p>
+                    <ul style="text-align: left; margin: 1rem 0; color: var(--soft-gray);">
+                        <li>Desi & Continental menus</li>
+                        <li>Live cooking stations</li>
+                        <li>Professional staff</li>
+                        <li>Custom packages available</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                </div>
+                
+                <div class="service-card" id="photography">
+                    <div class="service-icon">📸</div>
+                    <h3>Photography & Videography</h3>
+                    <p>Professional photographers who understand Pakistani wedding traditions. From candid moments to traditional poses, capture every memory beautifully.</p>
+                    <ul style="text-align: left; margin: 1rem 0; color: var(--soft-gray);">
+                        <li>HD Photography & 4K Video</li>
+                        <li>Traditional & cinematic styles</li>
+                        <li>Same-day editing available</li>
+                        <li>Drone photography</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Browse Photographers</a>
+                </div>
+                
+                <div class="service-card" id="decoration">
+                    <div class="service-icon">🎨</div>
+                    <h3>Event Decoration</h3>
+                    <p>Transform your venue with stunning decoration. From traditional floral arrangements to modern themed setups tailored to your vision.</p>
+                    <ul style="text-align: left; margin: 1rem 0; color: var(--soft-gray);">
+                        <li>Floral arrangements</li>
+                        <li>Stage decoration</li>
+                        <li>Lighting design</li>
+                        <li>Themed setups</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Explore Decorators</a>
+                </div>
+                
+                <div class="service-card" id="makeup">
+                    <div class="service-icon">💄</div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Expert bridal makeup artists for your special day. Specializing in traditional bridal looks, mehndi styles, and complete beauty packages.</p>
+                    <ul style="text-align: left; margin: 1rem 0; color: var(--soft-gray);">
+                        <li>Bridal makeup</li>
+                        <li>Hair styling</li>
+                        <li>Mehndi application</li>
+                        <li>Trial sessions available</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Find Makeup Artists</a>
+                </div>
+                
+                <div class="service-card" id="planning">
+                    <div class="service-icon">🎭</div>
+                    <h3>Event Management</h3>
+                    <p>Stress-free wedding planning with professional event managers. We handle vendor coordination, timeline management, and day-of execution.</p>
+                    <ul style="text-align: left; margin: 1rem 0; color: var(--soft-gray);">
+                        <li>Complete wedding planning</li>
+                        <li>Vendor coordination</li>
+                        <li>Timeline management</li>
+                        <li>On-day execution</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Hire Planners</a>
+                </div>
+                
+                <div class="service-card" id="entertainment">
+                    <div class="service-icon">🎵</div>
+                    <h3>Entertainment</h3>
+                    <p>Keep your guests entertained with professional DJs, live bands, traditional dhol players, and performers for every wedding event.</p>
+                    <ul style="text-align: left; margin: 1rem 0; color: var(--soft-gray);">
+                        <li>Professional DJs</li>
+                        <li>Live bands</li>
+                        <li>Dhol players</li>
+                        <li>Cultural performers</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Book Entertainment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Tahwar.pk</h3>
+                    <p>Pakistan's most trusted wedding marketplace.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>For Vendors</h4>
+                    <ul>
+                        <li><a href="vendor-registration.html">Register Your Venue</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="venues.html">Wedding Venues</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Tahwar.pk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

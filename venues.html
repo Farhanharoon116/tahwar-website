@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Venues in Pakistan - Tahwar.pk</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/venues.css">
+</head>
+<body>
+    <div class="pattern-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tahwar.pk</a>
+            <ul class="nav-links">
+                <li><a href="venues.html">Venues</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="vendor-registration.html" class="vendor-btn">List Your Venue</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="TahwarApp.toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-nav" class="mobile-nav">
+        <ul>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="vendor-registration.html">List Your Venue</a></li>
+        </ul>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Find Your Perfect Wedding Venue</h1>
+            <p>Browse 500+ verified venues across Pakistan</p>
+        </div>
+    </section>
+    
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>Search</label>
+                    <input type="text" id="search-input" placeholder="Search by venue name..." class="filter-input">
+                </div>
+                
+                <div class="filter-group">
+                    <label>City</label>
+                    <select id="city-filter" class="filter-select">
+                        <option value="">All Cities</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="islamabad">Islamabad</option>
+                        <option value="rawalpindi">Rawalpindi</option>
+                        <option value="faisalabad">Faisalabad</option>
+                        <option value="multan">Multan</option>
+                        <option value="peshawar">Peshawar</option>
+                        <option value="quetta">Quetta</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Capacity</label>
+                    <select id="capacity-filter" class="filter-select">
+                        <option value="">Any Capacity</option>
+                        <option value="0-300">Up to 300 guests</option>
+                        <option value="300-600">300-600 guests</option>
+                        <option value="600-1000">600-1000 guests</option>
+                        <option value="1000-99999">1000+ guests</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="">Any Price</option>
+                        <option value="0-300000">Under ₨300,000</option>
+                        <option value="300000-500000">₨300,000 - ₨500,000</option>
+                        <option value="500000-700000">₨500,000 - ₨700,000</option>
+                        <option value="700000-99999999">Above ₨700,000</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Venues Grid -->
+    <section class="venues-section">
+        <div class="container">
+            <div class="venues-grid">
+                <!-- Venue Card 1 -->
+                <div class="venue-card" data-city="karachi" data-capacity="800" data-price="450000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Available</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Pearl Continental Marquee</h3>
+                            <div class="venue-rating">★ 4.8</div>
+                        </div>
+                        <div class="venue-location">📍 Karachi, Sindh</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">800 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Indoor/Outdoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 450,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=1" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Venue Card 2 -->
+                <div class="venue-card" data-city="lahore" data-capacity="1200" data-price="650000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Featured</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Royal Palm Golf Club</h3>
+                            <div class="venue-rating">★ 4.9</div>
+                        </div>
+                        <div class="venue-location">📍 Lahore, Punjab</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">1200 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Outdoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 650,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=2" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Venue Card 3 -->
+                <div class="venue-card" data-city="islamabad" data-capacity="600" data-price="350000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Available</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Emerald Grand Banquet</h3>
+                            <div class="venue-rating">★ 4.7</div>
+                        </div>
+                        <div class="venue-location">📍 Islamabad, ICT</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">600 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Indoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 350,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=3" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Venue Card 4 -->
+                <div class="venue-card" data-city="lahore" data-capacity="500" data-price="400000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Available</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Nishat Hotel Convention Centre</h3>
+                            <div class="venue-rating">★ 4.6</div>
+                        </div>
+                        <div class="venue-location">📍 Lahore, Punjab</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">500 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Indoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 400,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=4" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Venue Card 5 -->
+                <div class="venue-card" data-city="rawalpindi" data-capacity="700" data-price="380000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Available</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Centaurus Mall Marquee</h3>
+                            <div class="venue-rating">★ 4.5</div>
+                        </div>
+                        <div class="venue-location">📍 Rawalpindi, Punjab</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">700 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Indoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 380,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=5" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Venue Card 6 -->
+                <div class="venue-card" data-city="karachi" data-capacity="1000" data-price="550000">
+                    <div class="venue-image">
+                        <div class="venue-badge">Featured</div>
+                    </div>
+                    <div class="venue-info">
+                        <div class="venue-header">
+                            <h3 class="venue-name">Beach Luxury Karachi</h3>
+                            <div class="venue-rating">★ 4.8</div>
+                        </div>
+                        <div class="venue-location">📍 Karachi, Sindh</div>
+                        <div class="venue-details">
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Capacity</span>
+                                <span class="venue-detail-value">1000 Guests</span>
+                            </div>
+                            <div class="venue-detail">
+                                <span class="venue-detail-label">Type</span>
+                                <span class="venue-detail-value">Outdoor</span>
+                            </div>
+                        </div>
+                        <div class="venue-price">
+                            <div>
+                                <div class="price">₨ 550,000</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="venue-details.html?id=6" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <button id="load-more-btn" class="btn btn-secondary">Load More Venues</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Tahwar.pk</h3>
+                    <p>Pakistan's most trusted wedding marketplace.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">▶</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>For Vendors</h4>
+                    <ul>
+                        <li><a href="vendor-registration.html">Register Your Venue</a></li>
+                        <li><a href="vendor-login.html">Vendor Login</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="venues.html">Wedding Venues</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Tahwar.pk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
