@@ -22,8 +22,10 @@ function toggleMobileMenu() {
     }
 }
 
-// Make function globally available
+// Make function globally available - BOTH ways for compatibility
 window.toggleMobileMenu = toggleMobileMenu;
+window.TahwarApp = window.TahwarApp || {};
+window.TahwarApp.toggleMobileMenu = toggleMobileMenu;
 
 // Tab Switching
 function switchTab(tabName) {
