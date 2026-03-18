@@ -89,5 +89,37 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+     <script src="js/main.js"></script>
+    <!-- Tahwar.pk AI Agent Widget -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/style.css" rel="stylesheet" />
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://farhan116.app.n8n.cloud/webhook/18dd2252-729c-44e7-8a6f-a6b92db0e70d/chat',
+    target: '#n8n-chat',
+    mode: 'window',
+    chatInputKey: 'chatInput',
+    chatSessionKey: 'sessionId',
+    metadata: {},
+    showWelcomeScreen: true,
+    defaultLanguage: 'en',
+    initialMessages: [
+      'Assalam o Alaikum! 🌸',
+      'Welcome to Tahwar.pk — Pakistan\'s most trusted wedding marketplace!',
+      'How can I help you find your perfect venue today?'
+    ],
+    i18n: {
+      en: {
+        title: 'Tahwar Assistant 💍',
+        subtitle: 'Ask me anything about venues & wedding services',
+        footer: 'Powered by Tahwar.pk',
+        getStarted: 'Start Planning Your Wedding',
+        inputPlaceholder: 'Type your question here...',
+      }
+    }
+  });
+</script>
+<div id="n8n-chat"></div>
 </body>
 </html>
