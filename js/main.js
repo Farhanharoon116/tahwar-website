@@ -16,9 +16,13 @@ window.addEventListener('scroll', function() {
 
 // Mobile Menu Toggle
 function toggleMobileMenu() {
+    console.log('Toggle mobile menu called');
     const mobileNav = document.getElementById('mobile-nav');
     if (mobileNav) {
         mobileNav.classList.toggle('active');
+        console.log('Mobile nav toggled, active:', mobileNav.classList.contains('active'));
+    } else {
+        console.error('Mobile nav element not found!');
     }
 }
 
@@ -36,8 +40,10 @@ function switchTab(tabName) {
     buttons.forEach(btn => btn.classList.remove('active'));
     contents.forEach(content => content.classList.remove('active'));
     
-    // Add active class to clicked button
-    event.target.classList.add('active');
+     // Add active class to clicked button (using event if available, or finding by onclick)
+    if (typeof event !== 'undefined' && event.target) {
+        event.target.classList.add('active');
+    }
     
     // Show corresponding content
     const tabContent = document.getElementById(tabName + '-tab');
