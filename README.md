@@ -177,28 +177,6 @@ Soft Gray:         #6B6B6B
 2. **Ensure folder structure is maintained**
 3. **Test all pages** to ensure links work correctly
 
-### Customization Points
-
-#### Adding New Venues
-Edit `venues.html` and add venue cards:
-```html
-<div class="venue-card" data-city="karachi" data-capacity="800" data-price="450000">
-    <!-- Venue content -->
-</div>
-```
-
-#### Modifying Colors
-Edit `css/styles.css` - change CSS variables in `:root`:
-```css
-:root {
-    --maroon: #8B2635;  /* Change this */
-    --gold: #C9A96E;    /* And this */
-}
-```
-
-#### Adding Form Fields
-Edit the respective HTML page and ensure validation in `js/main.js`
-
 ---
 
 ## 📱 Mobile Responsiveness
@@ -264,41 +242,6 @@ All pages are interconnected:
 - Vanilla JavaScript (no jQuery or frameworks)
 - Lazy loading for images (when implemented)
 - Fast page load times
-
----
-
-## 🎨 Customization Guide
-
-### Change Brand Colors
-```css
-/* In css/styles.css */
-:root {
-    --maroon: #YOUR_COLOR;
-    --gold: #YOUR_COLOR;
-    --ivory: #YOUR_COLOR;
-}
-```
-
-### Update Contact Information
-```html
-<!-- In contact.html -->
-<p>+92 300 YOUR_NUMBER</p>
-<p>your-email@tahwar.pk</p>
-```
-
-### Add More Venues
-```html
-<!-- Copy this structure in venues.html -->
-<div class="venue-card" data-city="CITY" data-capacity="NUMBER" data-price="NUMBER">
-    <!-- Fill in venue details -->
-</div>
-```
-
-### Modify Filters
-```javascript
-// In js/main.js - filterVenues() function
-// Adjust logic for custom filtering needs
-```
 
 ---
 
@@ -380,13 +323,4 @@ This is a complete, production-ready website template. All functionality is impl
 - ✅ **Production Ready**
 
 ---
-
-## 🎉 Ready to Launch!
-
-This website is **100% functional** and ready to use. Simply open `index.html` in a browser to see it in action. All buttons work, all forms validate, all filters function, and all pages are connected.
-
-**No placeholder content. No dummy buttons. Just a complete, working website.**
-
----
-
-© 2024 Tahwar.pk - Built with ❤️ for Pakistani families
+© 2026 Tahwar.pk - Built with ❤️ for Pakistani families
